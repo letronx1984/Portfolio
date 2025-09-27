@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 70);
+}
+
+
+#nombre {
+  border-right: 2px solid #007bff; /* efecto cursor */
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#descripcion{
+  border-right: 2px solid black;
+  padding-right: 5px;
+  overflow: hidden;
+}
+
+
+.container aside{
+    background-color: red;
+}
+
+#namedev{
+    background-color: yellow;
+    height: 90px;
+    width: 90px;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout general */
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: rgb(0, 0, 70);
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 1rem 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  color: #0d6efd;
+}
+
+/* Contenido */
+.content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about h1 span {
+  color: #0d6efd;
+}
+
+.about p {
+  margin: 1rem 0 2rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Proyectos */
+.projects .project-card {
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projects .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Contacto */
+.contact form input,
+.contact form textarea {
+  height: 45%;
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  border-radius: 10px;
+}
