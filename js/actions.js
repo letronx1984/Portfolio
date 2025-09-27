@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () =>{
 
-    const desc = "Desarrollador fullstack con experiencia en Java, Spring Boot, Angular y bases de datos. Me apasiona crear soluciones digitales modernas, escalables y con buena experiencia de usuario.";
+    const desc = "Desarrollador backend con experiencia en Java, Spring Boot, Angular y bases de datos. Me apasiona crear soluciones digitales modernas, escalables y con buena experiencia de usuario.";
     const span = document.getElementById("descripcion");
     let i = 0;
 
