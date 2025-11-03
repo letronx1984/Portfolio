@@ -1,6 +1,3 @@
-/* =============================
-RESET BÁSICO
-============================= */
 
 * {
   margin: 0;
@@ -14,17 +11,11 @@ background: #f8f9fa;
 color: #333;
 }
 
-/* =============================
-LAYOUT GENERAL
-============================= */
 .main-container {
 display: flex;
 min-height: 100vh;
 }
 
-/* =============================
-SIDEBAR
-============================= */
 .sidebar {
 width: 220px;
 background: rgb(0, 0, 70);
@@ -61,9 +52,7 @@ transition: color 0.3s;
 color: #0d6efd;
 }
 
-/* =============================
-CONTENIDO PRINCIPAL
-============================= */
+
 .content {
 flex: 1;
 padding: 2rem;
@@ -74,9 +63,6 @@ overflow-y: auto;
 margin-bottom: 4rem;
 }
 
-/* =============================
-SECCIÓN ABOUT
-============================= */
 .about h1 {
 font-size: 2.5rem;
 font-weight: bold;
@@ -103,9 +89,6 @@ max-width: 90%;
 
 }
 
-/* =============================
-SECCIÓN PROYECTOS
-============================= */
 .projects .project-card {
 border-radius: 15px;
 transition: transform 0.3s, box-shadow 0.3s;
@@ -116,9 +99,6 @@ transform: translateY(-5px);
 box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
 }
 
-/* =============================
-SECCIÓN CONTACTO
-============================= */
 .contact form input,
 .contact form textarea {
 width: 100%;
@@ -132,9 +112,6 @@ margin-bottom: 15px;
 border-radius: 10px;
 }
 
-/* =============================
-RESPONSIVIDAD
-============================= */
 @media (max-width: 768px) {
 .main-container {
 flex-direction: column;
@@ -188,4 +165,29 @@ text-align: center;
 @keyframes blink {
   0%, 50% { opacity: 1; }
   50.01%, 100% { opacity: 0; }
+}
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none
 }
