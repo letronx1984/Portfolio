@@ -42,7 +42,8 @@
             </a>
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">  
+              Contacto</a>
           </li>
         </ul>
       </nav>
@@ -151,6 +152,36 @@
   
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Enviame un mensaje</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="form-submit" action="https://formspree.io/f/mbdkzbqz" method="POST">
+            <input type="hidden" name="_next" value="https://letronx1984.github.io/Portfolio/">
+            
+            <div class="mb-3">
+              <label for="email" class="form-label">Tu correo electrónico:</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="message" class="form-label">Tu mensaje:</label>
+              <textarea name="message" class="form-control" id="message" rows="4" required></textarea>
+            </div>
+        
+            <div class="modal-footer px-0 pb-0">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

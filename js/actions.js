@@ -79,3 +79,31 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+const $form = document.querySelector('#form-submit');
+
+$form.addEventListener('submit', handleSubmit);
+
+async function handleSubmit(event) {
+  event.preventDefault(); 
+  
+  const form = new FormData(this);
+  const response = await fetch(this.action, {
+    method: this.method,
+    body: form,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    this.reset(); 
+    alert('¡Gracias por escribirnos! Me pondré en contacto contigo pronto.');
+    
+
+    const modalElement = document.querySelector('#contactModal');
+    const modal = bootstrap.Modal.getInstance(modalElement);
+    modal.hide();
+  } else {
+    alert('Ups, ocurrió un error al enviar el formulario.');
+  }
+}
