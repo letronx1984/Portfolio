@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (i < texto.length) {
         nombreSpan.textContent += texto.charAt(i);
         i++;
-        setTimeout(escribirNombre, 120);
+        setTimeout(escribirNombre, 222);
       }
     }
 
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (descSpan) {
     const desc =
-      "Desarrollador backend con experiencia en Java, Spring Boot, Angular y bases de datos. Me apasiona crear soluciones digitales modernas, escalables y con buena experiencia de usuario.";
+      "Desarrollador backend con experiencia en Java, Spring Boot, Angular y bases de datos. Me apasiona el mundo de las soluciones digitales, poder volverlas escalables y brindar una buena experiencia al usuario.";
     let j = 0;
 
     const cursor = document.createElement("span");
