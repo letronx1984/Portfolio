@@ -97,7 +97,7 @@ async function handleSubmit(event) {
 
   if (response.ok) {
     this.reset(); 
-    alert('¡Gracias por escribirnos! Me pondré en contacto contigo pronto.');
+    alert('¡Gracias por tomarte el tiempo en contactarme! Me pondré en contacto contigo pronto.');
     
 
     const modalElement = document.querySelector('#contactModal');
